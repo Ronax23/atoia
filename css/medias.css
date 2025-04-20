@@ -1,0 +1,70 @@
+@media(max-width:1200px)
+{
+    html 
+    {
+        font-size: 18px;
+    }
+}
+@media(max-width:1024px)
+{
+    html 
+    {
+        font-size: 14px;
+    }
+    /* .rita 
+    {
+        display: none;
+    } */
+    .carousel-control-next
+    {
+        left: -94%;
+    }
+    .carousel-control-prev {
+        left: -117%;
+    }
+    #sec4 .data
+    {
+        top: 225px;
+    }
+}
+@media (max-width:768px)
+{
+    .rita 
+    {
+        display: none;
+    }
+    .carousel-control-prev {
+        left: -2%;
+        top: 114%;
+    }
+    .carousel-control-next {
+        left: 15%;
+        top: 114%;
+    }
+}
+@media (max-width:576px)
+{
+    .rita 
+    {
+        display: none;
+    }
+    #faq-sec3 ul 
+    {
+        columns: 1;
+    }
+    .header-col::before {
+        position: absolute;
+        width: 1px;
+        height: 20px;
+        content: "";
+        background-color: white;
+        top: 2px;
+        left: 29%;
+    }
+    [id^="sec"]{
+        padding: 50px 0;
+    }
+    #sec4 .data {
+        top: 82%;
+    }
+}

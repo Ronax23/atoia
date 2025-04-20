@@ -1,0 +1,1119 @@
+:root {
+    --bg-col: #05051E;
+    --text-col1: #43A5FE;
+    --text-col2: #0A6ECA;
+    --sec2-p-col: #B9B9BA;
+    --badge-col: #0A6ECA;
+    --custom-jumb-col: #453F62;
+    --right-bar-col: #151526;
+}
+*{
+    font-family: "Domine", serif;
+}
+
+html {
+    font-size: 20px;
+}
+
+#head-sec1 {
+    z-index: 0;
+}
+
+#sec2,
+#contact,
+#aboutus,
+#portfolioo,
+#faq,
+#gal-sec,
+#price-sec1,
+#service,
+#service-del,
+#term-sec1,
+#team,
+#blog,
+#port-del {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+#aboutus h2,
+#portfolioo h2,
+#faq h2,
+#gal-sec h2,
+#price-sec1 h2,
+#service h2,
+#service-del h2,
+#term-sec1 h2,
+#team h2,
+#blog h2,
+#contact h2,
+#port-del h2 {
+    margin-top: 200px;
+}
+
+#head-sec1 .content,
+#faq-sec3 {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    padding: 100px 0;
+    width: 100%;
+    /* height: 50vh; */
+}
+
+#port-del {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-2.png");
+}
+
+#blog {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/all-img/blog-details-1.png");
+}
+
+#team {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-1.png");
+}
+
+#term-sec1 {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-6.png");
+}
+
+#service-del {
+    background-image: url("http://wphtml.com/html/tf/aithm-demo/assets/img/banner/project-bg.png");
+}
+
+#service {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-2.png");
+}
+
+#price-sec1 {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-8.png");
+}
+
+#gal-sec {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-4.png");
+}
+
+#faq-sec3 {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-7.png");
+}
+
+#head-sec1 .content {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-main.png");
+}
+
+#faq {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-3.png");
+}
+
+#aboutus {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-5.png");
+}
+
+#contact {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-9.png");
+}
+
+#portfolioo {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-7.png");
+}
+
+nav {
+    padding: 20px 0 !important;
+    border-bottom: .1 solid white !important;
+}
+
+nav a,
+.content a,
+.content p,
+#sec2 h3,
+#sec8 h3,
+#blog-sec2 .card-footer h3 {
+    color: white !important;
+}
+
+
+nav i {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+#head-sec1,
+#contact,
+#term-sec2,
+#cookie,
+#blog-sec2,
+#product-list {
+    background-color: var(--bg-col);
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.more-link a {
+    background: linear-gradient(to right, rgba(255, 255, 255, 8%), rgba(255, 255, 255, 8%)) !important;
+    color: white;
+    text-transform: capitalize;
+    transition-duration: 36 !important;
+}
+
+.custom-btn {
+    background-image: linear-gradient(to right, rgba(67, 165, 254, 100%), rgb(5, 90, 170)) !important;
+    overflow: hidden;
+}
+
+.custom-btnn:hover {
+    /* transform: scaleX(1.1); */
+    padding-right: 40px;
+    transition: .2s;
+
+
+}
+
+
+
+#head-sec1 .nav-pills .nav-link:hover {
+    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgb(5, 90, 170)) !important;
+    transition-duration: 2s !important;
+}
+
+footer ul,
+#sec7 ul li,
+#sec8 ul li,
+#sec9 ul li,
+#faq-sec4 ul li,
+#blog li,
+#blog-sec2 li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li a,
+footer h3 {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.badge {
+    position: relative;
+    top: -8px;
+    left: -6px;
+    background-color: var(--badge-col);
+    font-size: 9px;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.custom-btn {
+    position: relative;
+
+}
+
+.custom-btn i {
+    position: absolute;
+    left: 500px;
+    padding: 0 10px;
+    transition: .2s;
+    top: 15px;
+    font-size: 15px;
+}
+
+.custom-btn:hover i {
+    left: 150px;
+}
+
+#sec8 h3 {
+
+    transition-duration: .5s;
+}
+
+.header-col,
+.h1-col,
+.head-col,
+#sec8 h3:hover,
+#blog-sec2 h3:hover {
+    position: relative;
+    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgba(5, 90, 170, 90%));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition-duration: .5s;
+
+}
+footer li a:hover
+{
+    color: var(--text-col1);
+    transition-duration: .6s;
+}
+
+.content form,footer form {
+    background: linear-gradient(to right, rgba(67, 165, 254, 10%), rgba(5, 90, 170, 10%));
+    /* opacity: .1; */
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.content form a {
+    border-radius: 8px !important;
+}
+
+.content h1,
+.content form {
+    margin-bottom: 40px;
+    font-size: 3rem;
+
+}
+
+.content form input,footer form input{
+    background-color: transparent;
+    /* opacity: .1; */
+    /* filter: blur(1px); */
+    border: none;
+}
+
+.header-col::before {
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    content: "";
+    background-color: white;
+    top: 3px;
+    left: 36%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.head-col::before {
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    content: "";
+    background-color: white;
+    top: 5px;
+    left: -10px;
+}
+
+#sec3 h2,
+#sec4 h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+
+.h1-cl {
+    text-align: right;
+    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgb(6, 102, 193));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#sec2 {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-5.png");
+    background-color: var(--bg-col);
+}
+
+#sec2 .content {
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(3.5px);
+    padding: 40px 20px;
+    border: 1px solid #101c37;
+    transition-duration: .5s;
+    margin: 15px 0;
+}
+
+#sec2 .content:hover {
+    background-color: #0b1327;
+}
+
+img {
+    width: 100%;
+}
+
+#sec2 .p-col,
+#sec3 p,
+#sec3 li,
+#sec4 p,
+#sec9 p,
+#sec7 p,
+#sec6 p,
+footer p,
+#sec8 p,
+#about-content,
+#faq-sec3 p,
+#faq-sec4 p,
+#service-sec4 p,
+#service-sec2 p,
+#term-sec2 p,
+#term-sec2 li,
+#cookie p,
+#cookie li,
+#blog-sec2 p,
+#port-del2 p,
+#port-del2 li,
+#sec3-contact form ::placeholder,
+#sec2-contact p,
+#head-sec1 input::placeholder,
+#accord p,
+#product-list p,
+#product-list strike {
+    color: var(--sec2-p-col) !important;
+}
+
+#sec3 i {
+    padding: 0 10px;
+    text-align: right;
+    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgb(6, 102, 193));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+#sec3 ul li {
+    list-style: none;
+    position: relative;
+}
+
+#sec2 h3 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+#sec3 .pics,
+#about-content .movpic,
+#faq-sec2 .photo,
+#faq-sec4 .photo {
+    position: relative;
+    overflow: hidden;
+}
+
+#sec3 .mov,
+#about-content .slidey,
+#faq-sec2 .photo .mov-img,
+#faq-sec4 .photo .movers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: .5s;
+    transform:translateX(50%) scaleX(2);
+}
+
+#sec3 .pics:hover .mov,
+#about-content .movpic:hover .slidey,
+#faq-sec2 .photo:hover .mov-img,
+#faq-sec4 .photo:hover .movers {
+    opacity: 1;
+    transform:translateX(0) scaleX(1);
+}
+
+#sec3-1 img {
+    width: 100%;
+    opacity: .5;
+    transition-duration: .5s;
+}
+
+#sec3-1 img:hover {
+    opacity: 1;
+}
+
+[id^="sec"],
+#about-content,
+#about-scroll,
+#portfolio-sec2,
+#faq-sec2,
+#faq-sec4,
+#service-sec4,
+#service-sec2,
+#team-sec2,
+#team-sec3,
+#port-del2 {
+    width: 100%;
+    padding: 100px 0;
+    background-color: var(--bg-col);
+}
+
+#sec4 i {
+    border-radius: 100%;
+    border: 1px solid var(--sec2-p-col);
+    padding: 15px;
+}
+
+.infos {
+    position: relative;
+    overflow: hidden;
+}
+
+#sec4 .data h2,
+#team-sec2 .data h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+#sec4 .data p,
+#team-sec2 .data p {
+    font-size: .7rem;
+    padding-bottom: 40px;
+}
+
+#sec4 .data,
+#team-sec2 .data {
+    width: 93%;
+    position: absolute;
+    top: 270px;
+    padding: 20px;
+    transition-duration: .5s;
+    height: 100%;
+}
+
+#team-sec2 .data {
+    top: 350px;
+}
+
+#sec4 .infos:hover .data,
+#team-sec2 .infos:hover .data {
+    top: 0;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, .2), rgba(0, 0, 0, 0.2));
+}
+
+ .nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar .nav-link::before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    left: -100%;
+    border-bottom: 2px solid var(--text-col1);
+    transition: .5s;
+}
+
+ .nav-link:hover::before {
+
+    left: 0;
+}
+
+#sec4 .data i,
+#team-sec2 .data i {
+    border: none;
+    color: white;
+}
+
+footer {
+    background-color: var(--bg-col);
+}
+
+#sec2 i {
+    font-size: 50px;
+    margin: 20px 0;
+    color: white;
+}
+
+#sec4 {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-7.png");
+}
+
+#sec4 .sel {
+    position: relative;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 86%;
+    top: 100%;
+    left: -90%;
+}
+
+.carousel-control-prev {
+
+    left: -100%;
+}
+
+#sec5 .photo,
+#portfolio-sec2 .port,
+#service-sec4 .pics,
+#team-sec3 .port {
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#sec5 img:hover,
+#portfolio-sec2 .port:hover img,
+#service-sec4 .pics img:hover,
+#team-sec3 .port:hover img {
+    transform: scale(1.1);
+    transition-duration: .4s;
+}
+
+#sec6 {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-8.png");
+}
+
+.carousel-indicators {
+    bottom: -20%;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 100% !important;
+    width: 10px;
+    height: 10px;
+    background-color: #0A6ECA;
+}
+
+#sec6 .content {
+    padding: 15px;
+
+}
+
+.blurry {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3.5px);
+}
+
+#sec7,
+#faq-sec4 {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-9.png");
+    color: white;
+}
+
+#sec7 img {
+    border-radius: 40px;
+}
+
+#sec8 .box,
+#blog-sec2 .box {
+    position: relative;
+}
+
+#sec8 ul,
+#blog-sec2 .box ul {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    padding: 10px;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(10, 1, 1, 0.5));
+    color: white;
+    border-radius: 2px;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#sec8 .card:hover ul {
+    background: linear-gradient(#05051E, rgba(10, 1, 1, 1));
+    transition-duration: .5s;
+}
+
+
+.sec9-bg-img {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/ft-shape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 135px 0;
+}
+
+#sec9 .scaler {
+    overflow: hidden;
+    transition-duration: .5s;
+}
+
+#sec9 img:hover {
+    transform: scale(1.1);
+    cursor: progress;
+}
+
+#sec9 i {
+    padding: 10px;
+    background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1));
+    margin: 5px;
+    /* transition-duration: .5s; */
+    transition-delay: .5s;
+}
+
+#sec9 i:hover {
+    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgba(5, 90, 170, 90%));
+}
+
+#sec6 p {
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+#sec6 h4 {
+    font-size: 1.2rem;
+}
+
+.movable {
+    text-align: right;
+    padding: 5px 10px;
+    background-color: #1EB398;
+    position: relative;
+    left: 56%;
+    top: 8px;
+    border-radius: 6px;
+}
+
+.card-footer {
+    background: none !important;
+}
+
+
+.pics-contact {
+    position: relative;
+    overflow: hidden;
+}
+
+.pics-contact i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    color: white;
+    font-size: 60px;
+    background: linear-gradient(to right, rgba(29, 1, 1, 0.5), rgba(11, 1, 1, 0.5));
+    top: -500px;
+    left: 0;
+    text-align: center;
+    transition-duration: .5s;
+}
+
+.pics-contact:hover i {
+    top: 0;
+}
+
+footer h2 {
+    font-size: 1.11rem;
+}
+
+#sec7 .card,
+#faq-sec4 .card {
+    border: 2px solid #1EB398;
+}
+
+
+#about-scroll {
+    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/all-img/video-bg.png");
+    height: 80vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#portfolio-sec2 .port,
+#team-sec3 .port {
+    position: relative;
+}
+
+#portfolio-sec2 .content-port,
+#team-sec3 .content-port {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    padding-top: 150px;
+    opacity: 0;
+    transition-duration: .4s;
+}
+
+#portfolio-sec2 .content-port span {
+    display: none;
+}
+
+#portfolio-sec2 .content-port:hover,
+#team-sec3 .content-port:hover {
+    opacity: 1;
+}
+
+#portfolio-sec2 .content-port button:hover span {
+    display: inline;
+    transition: .4s;
+
+}
+
+#about-content li {
+    counter-increment: inc;
+    border-bottom: 1px solid #10152D;
+}
+
+#about-content li::marker {
+    color: #0A6ECA;
+    font-size: 2rem;
+    content: counter(inc, decimal-leading-zero)" ";
+    font-weight: bold;
+
+}
+
+.breadcrumb a {
+    color: white !important;
+}
+
+.breadcrumb li,
+.breadcrumb-item::before {
+    color: #0A6ECA !important;
+}
+
+
+
+
+.accordion-button::after {
+    background: none;
+    font-family: bootstrap-icons !important;
+    content: "\F229";
+    font-weight: 600;
+
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: none;
+    content: " \F229";
+    transform: rotate(90deg);
+
+
+}
+
+.accordion-button,
+.accordian-body {
+    background-color: var(--bg-col);
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+#faq-sec3 li::before {
+    font-family: bootstrap-icons !important;
+    content: "\F272";
+    padding: 3px;
+    margin-right: 10px;
+    background-color: #43A5FE;
+    color: black;
+    border-radius: 100%;
+}
+
+#faq-sec3 ul {
+    columns: 2;
+}
+
+#faq-sec3 li {
+    color: white;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    font-size: 17px;
+    background-color: #1515264d;
+    list-style: none;
+    margin-bottom: 20px;
+    transition: .4s;
+    border: .5px solid #1515264d;
+}
+
+#faq-sec3 li:hover {
+    border: .5px solid var(--text-col1);
+}
+
+#faq-sec3 {
+    padding: 150px 0;
+}
+
+.card-header,
+.card-footer {
+    border: none;
+}
+
+#service-sec4 .col-lg-4 {
+    position: relative;
+}
+
+#service-sec4 a {
+    position: absolute;
+    padding: 14px 20px;
+    backdrop-filter: blur(10px);
+    bottom: 20px;
+    left: 5%;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+#service-sec4 a i {
+    margin-left: 5px;
+}
+
+#service-sec4 .col-lg-4:hover a {
+    left: 7%;
+    background-color: var(--bg-col);
+    color: var(--text-col2);
+}
+
+#service-sec2 i {
+    color: var(--text-col2);
+}
+
+.custom-jumbo {
+    background-color: var(--custom-jumb-col);
+}
+
+.custom-jumbo i {
+    font-size: 3.5rem;
+}
+
+#term-sec2 {
+    line-height: 1.5;
+}
+
+#term-sec2 p {
+    font-size: 1rem;
+}
+
+#term-sec2 .style-change li,
+#term-sec2 .distributer li {
+    list-style-type: square;
+
+}
+
+.distributer li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.distributer a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-bar-ico ul li,
+#port-del2 li {
+    list-style: none;
+}
+
+.my-bg-col {
+    background-color: var(--right-bar-col);
+    border-bottom: .1px solid transparent;
+}
+
+#term-sec2 .my-bg-col a:hover,
+#term-sec2 .my-bg-col a:hover::marker {
+    color: var(--text-col1);
+    transition-duration: .5s;
+}
+
+.my-bg-col:hover {
+    border-bottom: .1px solid var(--text-col2);
+    transition-duration: .5s;
+}
+
+.my-bg-col .side-line {
+    position: relative;
+    font-size: 2rem;
+}
+
+.my-bg-col .side-line::before {
+    position: absolute;
+    top: 6px;
+    left: -10px;
+    width: 2px;
+    height: 80%;
+    content: "";
+    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgb(5, 90, 170));
+}
+
+.alpha ol {
+    list-style: none;
+    counter-reset: adder;
+}
+
+.alpha li {
+    counter-increment: adder;
+}
+
+.alpha li::marker {
+    content: counter(adder, lower-alpha)" . ";
+}
+
+#blog-sec2 .custom-jumbo {
+    position: relative;
+}
+
+.dropdown-toggle::after
+{
+    content: none;
+}
+
+#blog-sec2 .icos::before {
+    position: absolute;
+    font-family: bootstrap-icons !important;
+    content: "\F6C2";
+    color: white;
+    opacity: .2;
+    top: 10px;
+    left: 60px;
+    font-size: 3rem;
+    animation: rocky 2s infinite linear;
+
+}
+
+@keyframes rocky {
+    0% {
+        top: 0px;
+        opacity: .1;
+    }
+
+    50% {
+        top: -15px;
+        opacity: .2;
+    }
+
+    100% {
+        top: 0px;
+        opacity: .1;
+    }
+}
+
+.page-link {
+    background-color: transparent;
+    transition-duration: .5s;
+    border: .1px solid var(--badge-col);
+    margin-right: 0;
+}
+
+.page-link:hover {
+    background-color: var(--text-col1);
+    border-radius: 0px !important;
+}
+
+.atrfy {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+}
+
+.art-des {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+
+}
+
+#product-list .card-img-top
+{
+    clip-path: polygon(50% 5%, 100% 0, 93% 50%, 100% 100%, 0 100%, 6% 50%, 0 0);
+    overflow: hidden;
+}
+#product-list .card-img-top img:hover
+{
+    /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+
+#sec3-contact .bgm
+{
+    background-color: var(--right-bar-col);
+}
+#sec3-contact form input,#sec3-contact textarea
+{
+    background-color: transparent;
+    border: none;
+    margin: 40px 0;
+    border-bottom: .1px solid var(--bg-col);
+}
+#sec3-contact textarea
+{
+    height: 200px !important;
+}
+#sec3-contact form input:hover,#sec3-contact textarea:hover
+{
+    border-bottom: .1px solid var(--text-col1);
+    transition-duration: .5s;
+}
+#sec3-contact form input:hover::placeholder,#sec3-contact textarea:hover::placeholder,footer input:hover::placeholder
+{
+    opacity: 0;
+    transition-duration: .2s;
+}
+.dropdown-item
+{
+    border-left: 2px solid transparent;
+    transition-duration: .4s;
+}
+.dropdown-item:hover
+{
+    border-left: 2px solid var(--text-col2);
+    color: var(--text-col1) !important;
+}
+#head-sec1 input:focus
+{
+    background-color: transparent !important;
+    border: none !important;
+}
+#head-sec1 input:placeholder-shown
+{
+    /* background-color: transparent !important; */
+    border: none !important;
+}
+
+.div-ico-mover
+{
+    position: relative;
+}
+.div-ico-mover::before
+{
+    bottom: 20px;
+    left: -10px;
+    content: "\F6B0";
+    font-family: boot;
+}
+#term-sec2 input 
+{
+    background-color: transparent !important;
+}
+#sec2-contact i 
+{
+    font-size: 30px;
+}
+.boder-hov
+{
+    border: 1px solid transparent;
+    transition: .2s ease-out;
+}
+.boder-hov:hover
+{
+    border: 1px solid var(--text-col2);
+}
+#port-del2 small
+{
+    position: relative;
+    top: -5px;
+}
+ .accordion-button
+ /* .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed */
+  {
+    background-color: transparent !important;
+    border: none;
+    cursor: pointer;
+}
+.accordion-button:not(.collapsed) 
+{
+    color: white;
+    border: none;
+}
