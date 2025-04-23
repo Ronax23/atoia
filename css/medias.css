@@ -29,6 +29,10 @@
 }
 @media (max-width:768px)
 {
+    #sec2 
+    {
+        padding-bottom: 60px;
+    }
     .rita 
     {
         display: none;
@@ -41,9 +45,24 @@
         left: 15%;
         top: 114%;
     }
+    footer > .container > .row > .col-lg-6:nth-child(1)::after 
+    {
+        content: none;
+    }
 }
 @media (max-width:576px)
 {
+    .more-link li:nth-child(2)
+    {
+        display: none;
+    }
+    #sec2 
+    {
+        padding-bottom: 30px;
+    }
+    .carousel-indicators {
+        bottom: -10%;
+    }
     .rita 
     {
         display: none;
@@ -51,6 +70,7 @@
     #faq-sec3 ul 
     {
         columns: 1;
+        margin-left: -20px;
     }
     .header-col::before {
         position: absolute;
@@ -61,10 +81,32 @@
         top: 2px;
         left: 29%;
     }
-    [id^="sec"]{
+    [id^="sec"],#faq-sec3,#service-sec4{
         padding: 50px 0;
     }
     #sec4 .data {
         top: 82%;
+    }
+    .blurry .col-lg-6:nth-child(2)::before
+    {
+        content: none;
+    }
+    #about-scroll {
+        height: 40vh;
+    }
+}
+
+@media (max-width:425px)
+{
+    .header-col::before
+    {
+        left: 24%;
+    }
+}
+@media (max-width:320px)
+{
+    .more-link li:nth-child(3)
+    {
+        display: none;
     }
 }

@@ -6,13 +6,14 @@
     --badge-col: #0A6ECA;
     --custom-jumb-col: #453F62;
     --right-bar-col: #151526;
+    --gridColor: linear-gradient(94deg, var(--mainColor2) 21.18%, #0064C1 104.4%);
 }
 *{
     font-family: "Domine", serif;
 }
 
 html {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #head-sec1 {
@@ -137,12 +138,12 @@ nav a,
 }
 
 
-nav i {
-    font-size: 20px;
+nav .container i:not(.custom-btn i) {
+    font-size: 22px;
     margin-top: 5px;
 }
 
-nav li {
+nav .container li {
     margin-right: 20px;
 }
 
@@ -159,9 +160,7 @@ nav li {
 
 .more-link a {
     background: linear-gradient(to right, rgba(255, 255, 255, 8%), rgba(255, 255, 255, 8%)) !important;
-    color: white;
     text-transform: capitalize;
-    transition-duration: 36 !important;
 }
 
 .custom-btn {
@@ -179,23 +178,24 @@ nav li {
 
 
 
-#head-sec1 .nav-pills .nav-link:hover {
-    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgb(5, 90, 170)) !important;
-    transition-duration: 2s !important;
-}
+
 
 footer ul,
 #sec7 ul li,
 #sec8 ul li,
 #sec9 ul li,
 #faq-sec4 ul li,
-#blog li,
+#blog .row li,
 #blog-sec2 li {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
+#blog .head-col::before
+{
+    top: -2px;
+    left: -14px;
+}
 footer ul li a,
 footer h3 {
     color: white;
@@ -220,15 +220,15 @@ footer h3 {
 
 .custom-btn i {
     position: absolute;
-    left: 500px;
+    left: 100%;
     padding: 0 10px;
     transition: .2s;
-    top: 15px;
-    font-size: 15px;
+    top: 17px;
+    font-size: 14px;
 }
 
 .custom-btn:hover i {
-    left: 150px;
+    left: 140px;
 }
 
 #sec8 h3 {
@@ -238,9 +238,7 @@ footer h3 {
 
 .header-col,
 .h1-col,
-.head-col,
-#sec8 h3:hover,
-#blog-sec2 h3:hover {
+.head-col {
     position: relative;
     background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgba(5, 90, 170, 90%));
     -webkit-text-fill-color: transparent;
@@ -248,9 +246,12 @@ footer h3 {
     transition-duration: .5s;
 
 }
-footer li a:hover
+
+footer li a:hover,#sec8 h3:hover,
+#blog-sec2 h3:hover
 {
-    color: var(--text-col1);
+    color: var(--text-col1) !important;
+    cursor: pointer;
     transition-duration: .6s;
 }
 
@@ -319,6 +320,7 @@ footer li a:hover
     -webkit-background-clip: text;
 }
 
+
 #sec2 {
     background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-5.png");
     background-color: var(--bg-col);
@@ -345,6 +347,7 @@ img {
 #sec3 p,
 #sec3 li,
 #sec4 p,
+#team-sec2 p,
 #sec9 p,
 #sec7 p,
 #sec6 p,
@@ -371,7 +374,7 @@ footer p,
     color: var(--sec2-p-col) !important;
 }
 
-#sec3 i {
+#sec3 i:not(.custom-btn i) {
     padding: 0 10px;
     text-align: right;
     background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgb(6, 102, 193));
@@ -412,6 +415,13 @@ footer p,
     transform:translateX(50%) scaleX(2);
 }
 
+#faq-sec4 .photo:hover .movers
+{
+    opacity: 1;
+    transform: translateX(0%) scaleX(1);
+}
+
+
 #sec3 .pics:hover .mov,
 #about-content .movpic:hover .slidey,
 #faq-sec2 .photo:hover .mov-img,
@@ -442,7 +452,7 @@ footer p,
 #team-sec3,
 #port-del2 {
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: var(--bg-col);
 }
 
@@ -630,25 +640,46 @@ footer {
 }
 
 #sec9 .scaler {
+    
     overflow: hidden;
-    transition-duration: .5s;
 }
 
-#sec9 img:hover {
-    transform: scale(1.1);
-    cursor: progress;
+#sec9 .scaler:hover img{
+    transform: scale(1.2);
+    cursor: crosshair;
+    transition: .5s ease-out;
+}
+#sec9 .scaler:hover 
+{
+    transform: scale(1.04);
+    transition: .5s ease-out;
 }
 
 #sec9 i {
     padding: 10px;
-    background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1));
-    margin: 5px;
-    /* transition-duration: .5s; */
-    transition-delay: .5s;
 }
-
-#sec9 i:hover {
-    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgba(5, 90, 170, 90%));
+#sec9 a,.more-link a 
+{
+    position: relative;
+    z-index: 0;
+    margin: 5px;
+    background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1));
+}
+#sec9 a::before,.more-link a::before
+{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    background: linear-gradient(94deg, var(--text-col1) 21.18%, #0064C1 104.4%);
+    transition: .2s ease-in;
+    z-index: -1;
+}
+#sec9 a:hover::before,.more-link a:hover::before {
+    opacity: 1;
 }
 
 #sec6 p {
@@ -684,7 +715,8 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    padding-top: 80px;
+    place-content: center;
+    /* padding-top: 80px; */
     color: white;
     font-size: 60px;
     background: linear-gradient(to right, rgba(29, 1, 1, 0.5), rgba(11, 1, 1, 0.5));
@@ -728,26 +760,43 @@ footer h2 {
 #portfolio-sec2 .content-port,
 #team-sec3 .content-port {
     position: absolute;
+    display: flex;
+    place-content: center;
     width: 100%;
     height: 100%;
+    flex-wrap: wrap;
     top: 0;
     text-align: center;
-    padding-top: 150px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    /* padding-top: 150px; */
     opacity: 0;
     transition-duration: .4s;
 }
-
+#portfolio-sec2 .content-port button 
+{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    overflow: hidden;
+    transition-duration: .4s;
+}
+#portfolio-sec2 .content-port button:hover
+{
+    
+}
 #portfolio-sec2 .content-port span {
-    display: none;
+    visibility: hidden;
+    width: 0;
 }
 
 #portfolio-sec2 .content-port:hover,
-#team-sec3 .content-port:hover {
+#team-sec3 .content-port:hover{
     opacity: 1;
 }
 
 #portfolio-sec2 .content-port button:hover span {
     display: inline;
+    visibility: visible;
     transition: .4s;
 
 }
@@ -819,7 +868,7 @@ footer h2 {
     color: white;
     backdrop-filter: blur(10px);
     padding: 20px;
-    font-size: 17px;
+    font-size: 1rem;
     background-color: #1515264d;
     list-style: none;
     margin-bottom: 20px;
@@ -1116,4 +1165,97 @@ footer h2 {
 {
     color: white;
     border: none;
+}
+
+footer,footer .col-lg-6
+{
+    position: relative;
+    overflow: hidden;
+}
+footer .col-lg-6
+{
+    padding: 25px;
+}
+footer .container 
+{
+    padding-top: 20px;
+}
+footer .container-fluid::before
+{
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-image: radial-gradient(circle, #43A5FE 0%, transparent 70%);
+    content: "";
+    left: 0;
+    animation: line 30s infinite linear;
+}
+footer > .container > .row > .col-lg-6:nth-child(1)::after 
+{
+    position: absolute;
+    height: 100px;
+    width: 2px;
+    background-image: radial-gradient(circle, #43A5FE 0%, transparent 70%);
+    content: "";
+   top: 20%;
+   right: 0;
+    animation: linetop 20s infinite linear;
+}
+@keyframes linetop {
+   
+    50%
+    {
+        top: 70%;
+    }
+    100%
+    {
+       top: 20%;
+    }
+    
+}
+@keyframes line {
+   
+    50%
+    {
+        left: 95%;
+    }
+    100%
+    {
+        left: 0%;
+    }
+    
+}
+.blurry .col-lg-6:nth-child(2)
+{
+    position: relative;
+}
+.blurry .col-lg-6:nth-child(2)::before
+{
+    position: absolute;
+    font-family: bootstrap-icons !important;
+    content: "\F6B0";
+    color: white;
+    top: 70%;
+    left: -16px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+}
+#sec7 ul li 
+{
+    margin-left: -25px;
+}
+
+#sec8 a:hover
+{
+    transition: .5s ease-out;
+    color: var(--text-col1) !important;
+    text-decoration: none;
 }
