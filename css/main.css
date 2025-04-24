@@ -186,7 +186,8 @@ footer ul,
 #sec9 ul li,
 #faq-sec4 ul li,
 #blog .row li,
-#blog-sec2 li {
+#blog-sec2 li 
+{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -261,7 +262,37 @@ footer li a:hover,#sec8 h3:hover,
     padding: 10px;
     border-radius: 20px;
 }
-
+footer form 
+{
+    background-color: white !important;
+}
+footer .form-control
+{
+    background-color: transparent ;
+    border: none;
+}
+footer .custom-btn 
+{
+    border-radius: 6px !important;
+    border: none;
+    color: white;
+}
+#term-sec2 form,#cookie form,#blog-sec2 form{
+    background-color: transparent ;
+    border: none;
+}
+#term-sec2 form input,#cookie form input,#blog-sec2 form input
+{
+    background-color: #05051E !important;
+    border: none;
+}
+#term-sec2 form button,#cookie form button,#blog-sec2 form button{
+    background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgba(5, 90, 170, 90%)) !important;
+    color: white !important;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+}
 .content form a {
     border-radius: 8px !important;
 }
@@ -370,7 +401,8 @@ footer p,
 #head-sec1 input::placeholder,
 #accord p,
 #product-list p,
-#product-list strike {
+#product-list strike,
+#term-sec2 form input::placeholder {
     color: var(--sec2-p-col) !important;
 }
 
@@ -937,7 +969,7 @@ footer h2 {
 
 #term-sec2 .style-change li,
 #term-sec2 .distributer li {
-    list-style-type: square;
+    list-style-type: square !important;
 
 }
 
@@ -945,13 +977,20 @@ footer h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    /* list-style-position: outside; */
 }
 
 .distributer a {
     color: white;
     text-decoration: none;
 }
+.distributer  
+{
+    list-style-position: inside;
+}
+
+  
+  
 
 .right-bar-ico ul li,
 #port-del2 li {
@@ -964,8 +1003,11 @@ footer h2 {
 }
 
 #term-sec2 .my-bg-col a:hover,
-#term-sec2 .my-bg-col a:hover::marker {
-    color: var(--text-col1);
+#term-sec2 .my-bg-col a:hover::marker,
+#cookie  a:hover,
+#blog-sec2 .my-bg-col a:hover
+ {
+    color: var(--text-col1) !important;
     transition-duration: .5s;
 }
 
@@ -1258,4 +1300,27 @@ footer > .container > .row > .col-lg-6:nth-child(1)::after
     transition: .5s ease-out;
     color: var(--text-col1) !important;
     text-decoration: none;
+}
+#product-list .card-img-top
+{
+    position: relative;
+    overflow: hidden;
+}
+#product-list .movup
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    position: absolute;
+    top: -5%;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+#product-list .card:hover .movup
+{
+    opacity: 1;
+    top: 0;
 }
