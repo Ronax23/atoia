@@ -284,7 +284,9 @@ footer .custom-btn
 #term-sec2 form input,#cookie form input,#blog-sec2 form input
 {
     background-color: #05051E !important;
+    box-shadow: none;
     border: none;
+    color: white;
 }
 #term-sec2 form button,#cookie form button,#blog-sec2 form button{
     background: linear-gradient(to right, rgba(67, 165, 254, 100%), rgba(5, 90, 170, 90%)) !important;
@@ -1023,8 +1025,8 @@ footer h2 {
 
 .my-bg-col .side-line::before {
     position: absolute;
-    top: 6px;
-    left: -10px;
+    top: 2px;
+    left: -5px;
     width: 2px;
     height: 80%;
     content: "";
@@ -1110,7 +1112,7 @@ footer h2 {
     clip-path: polygon(50% 5%, 100% 0, 93% 50%, 100% 100%, 0 100%, 6% 50%, 0 0);
     overflow: hidden;
 }
-#product-list .card-img-top img:hover
+#product-list .card:hover img
 {
     /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
     transition-duration: 1s;
@@ -1156,6 +1158,8 @@ footer h2 {
 {
     background-color: transparent !important;
     border: none !important;
+    box-shadow: none;
+    color: white;
 }
 #head-sec1 input:placeholder-shown
 {
@@ -1177,6 +1181,7 @@ footer h2 {
 #term-sec2 input 
 {
     background-color: transparent !important;
+    box-shadow: none;
 }
 #sec2-contact i 
 {
@@ -1324,3 +1329,38 @@ footer > .container > .row > .col-lg-6:nth-child(1)::after
     opacity: 1;
     top: 0;
 }
+
+ 
+.grow-btn {
+padding: 10px;
+    transition: width .9s ease !important;
+    border-radius: 100%;
+    background-color: orangered;
+    border: none;
+   
+    overflow: hidden;
+   
+  }
+
+  .grow-btn:hover {
+    width: 200px;
+  }
+
+  .grow-btn i {
+    opacity: 0;
+    transform: translateX(-6px);
+    color: white;
+    text-align: center;
+
+    transition: opacity .3s ease, transform .3s ease !important;
+
+  }
+  .grow-btn span 
+  {
+    display: none;
+  }
+
+  .port:hover i {
+    opacity: 1;
+    transform: translateX(0);
+  }
