@@ -271,6 +271,11 @@ footer .form-control
     background-color: transparent ;
     border: none;
 }
+footer input:focus
+{
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
 footer .custom-btn 
 {
     border-radius: 6px !important;
@@ -806,21 +811,31 @@ footer h2 {
     opacity: 0;
     transition-duration: .4s;
 }
-#portfolio-sec2 .content-port button 
+#portfolio-sec2 .content-port button,#team-sec3 button
 {
     display: flex;
+    width: 50px;
+    height: 50px;
     flex-wrap: wrap;
+    border: 1px dotted #D63384;
+    background-color: #D63384;
     place-content: center;
     overflow: hidden;
-    transition-duration: .4s;
+   transition: padding .9s ease !important;
+    border-radius: 200px;
 }
-#portfolio-sec2 .content-port button:hover
+#portfolio-sec2 .content-port button:hover,#team-sec3 .content-port button:hover
 {
-    
+     padding-right: 180px;
 }
-#portfolio-sec2 .content-port span {
-    visibility: hidden;
-    width: 0;
+#portfolio-sec2 .content-port span,#team-sec3 span {
+   opacity: 0;
+   position: absolute;
+   top: 2px;
+   right: -150px;
+    transition:opacity .4s;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 #portfolio-sec2 .content-port:hover,
@@ -828,11 +843,8 @@ footer h2 {
     opacity: 1;
 }
 
-#portfolio-sec2 .content-port button:hover span {
-    display: inline;
-    visibility: visible;
-    transition: .4s;
-
+#portfolio-sec2 .content-port button:hover span,#team-sec3 .content-port button:hover span {
+    opacity: 1; 
 }
 
 #about-content li {
@@ -1331,34 +1343,6 @@ footer > .container > .row > .col-lg-6:nth-child(1)::after
 }
 
  
-.grow-btn {
-padding: 10px;
-    transition: width .9s ease !important;
-    border-radius: 100%;
-    background-color: orangered;
-    border: none;
-   
-    overflow: hidden;
-   
-  }
-
-  .grow-btn:hover {
-    width: 200px;
-  }
-
-  .grow-btn i {
-    opacity: 0;
-    transform: translateX(-6px);
-    color: white;
-    text-align: center;
-
-    transition: opacity .3s ease, transform .3s ease !important;
-
-  }
-  .grow-btn span 
-  {
-    display: none;
-  }
 
   .port:hover i {
     opacity: 1;
