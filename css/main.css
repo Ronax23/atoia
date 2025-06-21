@@ -271,7 +271,7 @@ footer .form-control
     background-color: transparent ;
     border: none;
 }
-footer input:focus
+footer input:focus,#sec3-contact input:focus,#sec3-contact textarea:focus
 {
     box-shadow: none !important;
     background-color: transparent !important;
@@ -1140,6 +1140,7 @@ footer h2 {
     background-color: transparent;
     border: none;
     margin: 40px 0;
+    color: whitesmoke;
     border-bottom: .1px solid var(--bg-col);
 }
 #sec3-contact textarea
@@ -1177,6 +1178,7 @@ footer h2 {
 {
     /* background-color: transparent !important; */
     border: none !important;
+    box-shadow: none !important;
 }
 
 .div-ico-mover
