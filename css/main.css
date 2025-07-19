@@ -68,64 +68,65 @@ html {
 }
 
 #port-del {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-2.png");
+    background-image: url("../pics/background/section-bg-2.png");
 }
 
 #blog {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/all-img/blog-details-1.png");
+    background-image: url("../pics/background/blog-details-1.png");
 }
 
 #team {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-1.png");
+    background-image: url("../pics/background/section-bg-1.png");
 }
 
 #term-sec1 {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-6.png");
+    background-image: url("../pics/background/section-bg-6.png");
 }
 
 #service-del {
-    background-image: url("http://wphtml.com/html/tf/aithm-demo/assets/img/banner/project-bg.png");
+    background-image: url("../pics/background/project-bg.png");
 }
 
 #service {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-2.png");
+    background-image: url("../pics/background/section-bg-2.png");
 }
 
 #price-sec1 {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-8.png");
+    background-image: url("../pics/background/section-bg-8.png");
 }
 
 #gal-sec {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-4.png");
+    background-image: url("../pics/background/section-bg-4.png");
 }
 
 #faq-sec3 {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-7.png");
+    background-image: url("../pics/background/section-bg-7.png");
 }
 
 #head-sec1 .content {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-main.png");
+    background-image: url("../pics/background/background-main.png");
 }
 
 #faq {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-3.png");
+    background-image: url("../pics/background/section-bg-3.png");
 }
 
 #aboutus {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-5.png");
+    background-image: url("../pics/background/section-bg-5.png");
 }
 
 #contact {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-9.png");
+    background-image: url("../pics/background/section-bg-9.png");
 }
 
 #portfolioo {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/section-bg-7.png");
+    background-image: url("../pics/background/section-bg-7.png");
 }
 
 nav {
     padding: 20px 0 !important;
     border-bottom: .1 solid white !important;
+        backdrop-filter: blur(5px);
 }
 
 nav a,
@@ -360,7 +361,7 @@ footer .custom-btn
 
 
 #sec2 {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-5.png");
+    background-image: url("../pics/background/background-5.png");
     background-color: var(--bg-col);
 }
 
@@ -482,6 +483,7 @@ footer p,
 [id^="sec"],
 #about-content,
 #about-scroll,
+#about-scroll1,
 #portfolio-sec2,
 #faq-sec2,
 #faq-sec4,
@@ -575,7 +577,7 @@ footer {
 }
 
 #sec4 {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-7.png");
+    background-image: url("../pics/background/background-7.png");
 }
 
 #sec4 .sel {
@@ -611,7 +613,7 @@ footer {
 }
 
 #sec6 {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-8.png");
+    background-image: url("../pics/background/background-8.png");
 }
 
 .carousel-indicators {
@@ -637,7 +639,7 @@ footer {
 
 #sec7,
 #faq-sec4 {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/background-9.png");
+    background-image: url("../pics/background/background-9.png");
     color: white;
 }
 
@@ -671,7 +673,7 @@ footer {
 
 
 .sec9-bg-img {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/banner/ft-shape.png");
+    background-image: url("../pics/background/ft-shape.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -681,17 +683,21 @@ footer {
 #sec9 .scaler {
     
     overflow: hidden;
+    transition: .5s ease-out;
 }
-
+#sec9 .scaler img 
+{
+    transition: .5s ease-in-out;
+}
 #sec9 .scaler:hover img{
     transform: scale(1.2);
     cursor: crosshair;
-    transition: .5s ease-out;
+   
 }
 #sec9 .scaler:hover 
 {
     transform: scale(1.04);
-    transition: .5s ease-out;
+    
 }
 
 #sec9 i {
@@ -779,13 +785,20 @@ footer h2 {
 }
 
 
-#about-scroll {
-    background-image: url("https://wphtml.com/html/tf/aithm-demo/assets/img/all-img/video-bg.png");
+#about-scroll,#about-scroll1 {
     height: 80vh;
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+#about-scroll
+{
+background-image: url("../pics/background/video-bg.png");
+}
+#about-scroll1
+{
+background-image: url("../pics/background/video-bg-1.png");
 }
 
 
